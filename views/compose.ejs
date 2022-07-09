@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+<h1>Compose</h1>
+<form action="/compose" method="post">
+<div class="form-group">
+    <label for="title">Title</label>>
+    <input type="text" name="postTitle"  class="form-control" autocomplete="off">
+    <!-- we have given the input a name of posttitle remember that  -->
+    <label>Post</label>
+    <textarea class="form-control" name="postBody"  rows="3" autocomplete="off"></textarea>
+    <!-- text area is a given a name postBody and remember -->
+</div>
+<button type="submit" class="btn btn-primary">Publish</button>
+<!-- when we submit go the app.post("/compose") part -->
+</form>
+<%- include('partials/footer'); -%>
